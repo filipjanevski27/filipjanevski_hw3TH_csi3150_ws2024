@@ -59,6 +59,18 @@
   text-align: center;
 }
 
+.experience .city {
+  background-image: url("../assets/anchorage-city.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.experience .museum {
+  background-image: url("../assets/anchorage-museum.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
 /*section 4*/
 .rail {
   background-image: url("../assets/mountain-4.jpg");
@@ -86,8 +98,32 @@
   text-align: center;
 }
 
+.quote img {
+  width: 100px;
+  height: 100px;
+}
+
 /*section 7*/
 .gallery {
+  width: 100vw;
+  height: 100vh;
+}
+.gallery img {
+  width: 24.6vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.arrows {
+  position: absolute;
+  top: 650%;
+  justify-content: space-between;
+  gap: 900px;
+}
+
+.arrows i {
+  font-size: 100px;
+  color: var(--font-color-primary);
 }
 
 /*section 8*/
