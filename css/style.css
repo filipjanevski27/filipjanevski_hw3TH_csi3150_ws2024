@@ -2,25 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: serif;
   --font-color-primary: #e2c044;
   --font-color-secondary: #f4f4f9;
+  --font-color-tertiary: #000000;
   color: var(--font-color-secondary);
 }
 
-/*background images (and gallery)*/
+/*universal button styling*/
+button {
+  background: var(--font-color-primary);
+  width: 160px;
+  height: 40px;
+  border: none;
+}
+
+/*centering sections*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--font-color-tertiary);
+}
 
 /*section 1*/
 .hero {
   background-image: url("../assets/mountain-1.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .deer {
+  width: 200px;
+  margin-top: 80px;
+  margin-bottom: -40px;
+}
+
+.hero p {
   text-align: center;
+  width: 200px;
+  font-size: 18px;
+}
+
+.hero p span {
+  font-size: 48px;
+}
+
+.hero .arrow {
+  width: 200px;
 }
 
 .hero h1 {
   font-size: 124px;
+  color: var(--font-color-primary);
+  margin: 60px 0;
+}
+
+.hero i {
+  margin-top: 40px;
+  font-size: 100px;
   color: var(--font-color-primary);
 }
 
@@ -28,16 +72,47 @@
 .hook {
   background-image: url("../assets/mountain-2.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
+}
+
+.hook h2 {
+  width: 100vw;
+  font-size: 124px;
+  color: var(--font-color-primary);
+  margin-left: 80px;
+  margin-top: -300px;
+}
+
+.hook .right {
+  text-align: left;
+  height: 35vh;
+  display: flex;
+  margin-top: -50px;
+  padding-left: 50px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hook .right p {
+  width: 70%;
+}
+.hook .right button {
+  background: var(--font-color-primary);
+  color: var(--font-color-tertiary);
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /*section 3*/
 .experience {
   background-image: url("../assets/mountain-3.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
   text-align: center;
 }
@@ -49,33 +124,43 @@
 }
 
 .experience div div {
-  width: 25vw;
-  height: 70vh;
+  width: 18vw;
+  height: 60vh;
+  background-size: cover;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .experience .brews {
   background-image: url("../assets/anchorage-brews.jpg");
-  background-size: cover;
-  text-align: center;
 }
 
 .experience .city {
   background-image: url("../assets/anchorage-city.jpg");
-  background-size: cover;
-  text-align: center;
 }
 
 .experience .museum {
   background-image: url("../assets/anchorage-museum.jpg");
-  background-size: cover;
-  text-align: center;
+}
+
+.experience div div h3 {
+  font-size: 28px;
+  justify-self: center;
+}
+
+.experience div div i {
+  font-size: 48px;
+  color: var(--font-color-primary);
 }
 
 /*section 4*/
 .rail {
   background-image: url("../assets/mountain-4.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
   text-align: center;
 }
@@ -84,7 +169,7 @@
 .stats {
   background-image: url("../assets/mountain-5.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
   text-align: center;
 }
@@ -93,32 +178,34 @@
 .quote {
   background-image: url("../assets/mountain-6.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
   text-align: center;
 }
 
 .quote img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 /*section 7*/
 .gallery {
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
+  background: var(--font-color-tertiary);
 }
+
 .gallery img {
-  width: 24.6vw;
+  width: 24.7%;
   height: 100vh;
   object-fit: cover;
 }
 
 .arrows {
   position: absolute;
+  width: 100vw;
   top: 650%;
-  justify-content: space-between;
-  gap: 900px;
 }
 
 .arrows i {
@@ -126,11 +213,19 @@
   color: var(--font-color-primary);
 }
 
+.arrows i:last-child {
+  position: absolute;
+  left: 69%;
+}
+
 /*section 8*/
 footer {
   background-image: url("../assets/mountain-7.jpg");
   background-size: cover;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
+
   text-align: center;
 }
+
+footer
