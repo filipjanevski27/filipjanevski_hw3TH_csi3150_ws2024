@@ -307,7 +307,7 @@ footer {
   background-image: url("../assets/mountain-7.jpg");
   background-size: cover;
   width: 75vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -324,17 +324,18 @@ footer .left {
 footer .left h1 {
   color: var(--font-color-primary);
   font-size: 100px;
-  margin-top: -300px;
+  margin-top: -100px;
 }
 
 footer .left ul {
   text-align: left;
   list-style-type: none;
   font-size: 24px;
+  margin: 50px 0;
 }
 
 footer .left .icons {
-  font-size: 24px;
+  font-size: 36px;
   text-align: left;
 }
 
@@ -348,6 +349,7 @@ footer .right {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 30px;
+  margin-top: -100px;
 }
 
 footer .right form {
@@ -365,4 +367,10 @@ footer .right form input {
 
 footer .right form input:last-child {
   height: 100px;
+}
+
+footer .right button {
+  color: var(--font-color-tertiary);
+  font-size: 18px;
+  font-weight: 900;
 }
