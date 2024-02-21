@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  --font-color-primary: #e2c044;
+  --font-color-secondary: #f4f4f9;
+  color: var(--font-color-secondary);
+}
+
+/*background images (and gallery)*/
+
+/*section 1*/
+.hero {
+  background-image: url("../assets/mountain-1.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 124px;
+  color: var(--font-color-primary);
+}
+
+/*section 2*/
+.hook {
+  background-image: url("../assets/mountain-2.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+/*section 3*/
+.experience {
+  background-image: url("../assets/mountain-3.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.experience .tours {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.experience div div {
+  width: 25vw;
+  height: 70vh;
+}
+
+.experience .brews {
+  background-image: url("../assets/anchorage-brews.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+/*section 4*/
+.rail {
+  background-image: url("../assets/mountain-4.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+/*section 5*/
+.stats {
+  background-image: url("../assets/mountain-5.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+/*section 6*/
+.quote {
+  background-image: url("../assets/mountain-6.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+/*section 7*/
+.gallery {
+}
+
+/*section 8*/
+footer {
+  background-image: url("../assets/mountain-7.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
