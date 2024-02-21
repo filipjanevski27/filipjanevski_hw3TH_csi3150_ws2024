@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: serif;
   --font-color-primary: #e2c044;
-  --font-color-secondary: #f4f4f9;
+  --font-color-secondary: #ffffff;
   --font-color-tertiary: #000000;
   color: var(--font-color-secondary);
 }
@@ -114,17 +114,27 @@ body {
   background-size: cover;
   width: 75vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
+}
+
+.experience h2 {
+  font-size: 60px;
+  width: 50%;
+  color: var(--font-color-primary);
 }
 
 .experience .tours {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 25px;
 }
 
-.experience div div {
-  width: 18vw;
+.experience .tours div {
+  width: 20vw;
   height: 60vh;
   background-size: cover;
   text-align: left;
@@ -146,14 +156,15 @@ body {
   background-image: url("../assets/anchorage-museum.jpg");
 }
 
-.experience div div h3 {
+.experience .tours div h3 {
   font-size: 28px;
   justify-self: center;
 }
 
-.experience div div i {
+.experience .tours div i {
   font-size: 48px;
   color: var(--font-color-primary);
+  margin-left: -65%;
 }
 
 /*section 4*/
@@ -162,7 +173,34 @@ body {
   background-size: cover;
   width: 75vw;
   height: 100vh;
-  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.rail h2 {
+  width: 100vw;
+  font-size: 88px;
+  color: var(--font-color-primary);
+  margin-left: 80px;
+  margin-top: -220px;
+}
+
+.rail .right {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-right: 20px;
+  gap: 50px;
+}
+
+.rail .right p {
+  width: 100%;
+  font-size: 18px;
+}
+
+.rail .right h5 {
+  font-size: 24px;
 }
 
 /*section 5*/
@@ -170,8 +208,32 @@ body {
   background-image: url("../assets/mountain-5.jpg");
   background-size: cover;
   width: 75vw;
-  height: 100vh;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
+}
+
+.stats div {
+  background: var(--font-color-tertiary);
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats h2 {
+  color: var(--font-color-primary);
+  font-size: 72px;
+  margin-bottom: 35px;
+}
+
+.stats h5 {
+  font-size: 20px;
 }
 
 /*section 6*/
@@ -179,20 +241,42 @@ body {
   background-image: url("../assets/mountain-6.jpg");
   background-size: cover;
   width: 75vw;
-  height: 100vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .quote img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.quote p {
+  width: 45%;
+  font-size: 18px;
+}
+
+.quote h5 {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+.quote i {
+  margin-top: 50px;
+  font-size: 100px;
+  color: var(--font-color-primary);
 }
 
 /*section 7*/
 .gallery {
   width: 75vw;
-  height: 100vh;
+  height: 80vh;
   background: var(--font-color-tertiary);
 }
 
@@ -205,7 +289,7 @@ body {
 .arrows {
   position: absolute;
   width: 100vw;
-  top: 650%;
+  top: 590%;
 }
 
 .arrows i {
@@ -223,9 +307,62 @@ footer {
   background-image: url("../assets/mountain-7.jpg");
   background-size: cover;
   width: 75vw;
-  height: 100vh;
-
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 
-footer
+footer .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -40px;
+}
+
+footer .left h1 {
+  color: var(--font-color-primary);
+  font-size: 100px;
+  margin-top: -300px;
+}
+
+footer .left ul {
+  text-align: left;
+  list-style-type: none;
+  font-size: 24px;
+}
+
+footer .left .icons {
+  font-size: 24px;
+  text-align: left;
+}
+
+footer .left .icons i {
+  color: var(--font-color-primary);
+}
+
+footer .right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+footer .right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer .right form input {
+  background: rgba(0, 0, 0, 0);
+  border-color: var(--font-color-secondary);
+  padding: 5px 0;
+}
+
+footer .right form input:last-child {
+  height: 100px;
+}
